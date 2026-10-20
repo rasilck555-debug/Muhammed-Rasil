@@ -1,0 +1,406 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2907
+\cocoatextscaling1\cocoaplatform1{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;\f1\froman\fcharset0 TimesNewRomanPS-BoldMT;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Here is a clean, modern, single-page 
+\f1\b \cf2 \strokec2 dark theme portfolio template
+\f0\b0 \cf2 \strokec2  using HTML and CSS. It includes a dark glassmorphism aesthetic, responsive design, interactive hover states, and clear visual hierarchy for your profile, skills, work experience, and education.\
+You can save the code below into an 
+\f2 \cf2 \strokec2 index.html
+\f0 \cf2 \strokec2  file and open it directly in any browser.\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 \strokec2 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Muhammed Rasil | Technical Support Engineer</title>\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
+    <style>\
+        :root \{\
+            --bg-color: #0f172a;\
+            --card-bg: #1e293b;\
+            --accent-color: #38bdf8;\
+            --accent-hover: #0284c7;\
+            --text-primary: #f8fafc;\
+            --text-secondary: #94a3b8;\
+            --border-color: #334155;\
+        \}\
+\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+        \}\
+\
+        body \{\
+            background-color: var(--bg-color);\
+            color: var(--text-primary);\
+            line-height: 1.6;\
+            padding: 20px;\
+        \}\
+\
+        .container \{\
+            max-width: 1000px;\
+            margin: 0 auto;\
+        \}\
+\
+        /* Header / Hero */\
+        header \{\
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);\
+            border: 1px solid var(--border-color);\
+            border-radius: 16px;\
+            padding: 40px;\
+            text-align: center;\
+            margin-bottom: 30px;\
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);\
+        \}\
+\
+        header h1 \{\
+            font-size: 2.5rem;\
+            color: var(--text-primary);\
+            letter-spacing: 1px;\
+            margin-bottom: 5px;\
+        \}\
+\
+        header h2 \{\
+            font-size: 1.2rem;\
+            color: var(--accent-color);\
+            font-weight: 500;\
+            margin-bottom: 20px;\
+        \}\
+\
+        header p.profile-summary \{\
+            max-width: 750px;\
+            margin: 0 auto 25px auto;\
+            color: var(--text-secondary);\
+            font-size: 0.95rem;\
+        \}\
+\
+        .contact-info \{\
+            display: flex;\
+            flex-wrap: wrap;\
+            justify-content: center;\
+            gap: 15px 25px;\
+            font-size: 0.9rem;\
+        \}\
+\
+        .contact-info a, .contact-info span \{\
+            color: var(--text-secondary);\
+            text-decoration: none;\
+            display: flex;\
+            align-items: center;\
+            gap: 8px;\
+            transition: color 0.3s;\
+        \}\
+\
+        .contact-info a:hover \{\
+            color: var(--accent-color);\
+        \}\
+\
+        .contact-info i \{\
+            color: var(--accent-color);\
+        \}\
+\
+        /* Section Layout */\
+        section \{\
+            background: var(--card-bg);\
+            border: 1px solid var(--border-color);\
+            border-radius: 16px;\
+            padding: 30px;\
+            margin-bottom: 30px;\
+        \}\
+\
+        .section-title \{\
+            font-size: 1.4rem;\
+            color: var(--accent-color);\
+            margin-bottom: 20px;\
+            display: flex;\
+            align-items: center;\
+            gap: 10px;\
+            border-bottom: 1px solid var(--border-color);\
+            padding-bottom: 10px;\
+        \}\
+\
+        /* Skills Grid */\
+        .skills-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));\
+            gap: 12px;\
+        \}\
+\
+        .skill-card \{\
+            background: rgba(255, 255, 255, 0.03);\
+            border: 1px solid var(--border-color);\
+            padding: 10px 15px;\
+            border-radius: 8px;\
+            text-align: center;\
+            font-size: 0.9rem;\
+            color: var(--text-primary);\
+            transition: transform 0.2s, border-color 0.2s;\
+        \}\
+\
+        .skill-card:hover \{\
+            transform: translateY(-2px);\
+            border-color: var(--accent-color);\
+        \}\
+\
+        /* Experience Timeline */\
+        .timeline \{\
+            display: flex;\
+            flex-direction: column;\
+            gap: 25px;\
+        \}\
+\
+        .job-card \{\
+            background: rgba(255, 255, 255, 0.02);\
+            border-left: 3px solid var(--accent-color);\
+            padding: 20px;\
+            border-radius: 0 12px 12px 0;\
+            border-top: 1px solid var(--border-color);\
+            border-right: 1px solid var(--border-color);\
+            border-bottom: 1px solid var(--border-color);\
+        \}\
+\
+        .job-header \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: flex-start;\
+            flex-wrap: wrap;\
+            margin-bottom: 12px;\
+        \}\
+\
+        .job-title \{\
+            font-size: 1.1rem;\
+            font-weight: 600;\
+            color: var(--text-primary);\
+        \}\
+\
+        .company-name \{\
+            color: var(--accent-color);\
+            font-size: 0.95rem;\
+        \}\
+\
+        .job-date \{\
+            font-size: 0.85rem;\
+            color: var(--text-secondary);\
+            background: rgba(56, 189, 248, 0.1);\
+            padding: 3px 10px;\
+            border-radius: 12px;\
+        \}\
+\
+        .job-details \{\
+            list-style-type: disc;\
+            padding-left: 20px;\
+            color: var(--text-secondary);\
+            font-size: 0.9rem;\
+        \}\
+\
+        .job-details li \{\
+            margin-bottom: 6px;\
+        \}\
+\
+        /* Education */\
+        .edu-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+            gap: 15px;\
+        \}\
+\
+        .edu-card \{\
+            background: rgba(255, 255, 255, 0.02);\
+            border: 1px solid var(--border-color);\
+            padding: 15px;\
+            border-radius: 8px;\
+        \}\
+\
+        .edu-title \{\
+            font-weight: 600;\
+            color: var(--text-primary);\
+            font-size: 0.95rem;\
+        \}\
+\
+        .edu-sub \{\
+            color: var(--text-secondary);\
+            font-size: 0.85rem;\
+            margin-top: 4px;\
+        \}\
+\
+        footer \{\
+            text-align: center;\
+            padding: 20px;\
+            color: var(--text-secondary);\
+            font-size: 0.8rem;\
+        \}\
+\
+        @media (max-width: 600px) \{\
+            header \{\
+                padding: 25px 15px;\
+            \}\
+\
+            .job-header \{\
+                flex-direction: column;\
+                gap: 5px;\
+            \}\
+\
+            section \{\
+                padding: 20px;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <div class="container">\
+        <!-- Header / Hero Section -->\
+        <header>\
+            <h1>MUHAMMED RASIL</h1>\
+            <h2>Technical Support Engineer</h2>\
+            <p class="profile-summary">\
+                To be a professional with excellent skills and knowledge in manipulating all areas of IT and networking, leveraging updated technical solutions to provide exceptional end-to-end customer support.\
+            </p>\
+            <div class="contact-info">\
+                <a href="mailto:Rasilck555@gmail.com"><i class="fas fa-envelope"></i> Rasilck555@gmail.com</a>\
+                <a href="tel:+97430808602"><i class="fas fa-phone"></i> +974 30808602</a>\
+                <a href="https://linkedin.com/in/muhammed-rasil-c-k-8585a4138" target="_blank"><i class="fab fa-linkedin"></i> muhammed-rasil-c-k</a>\
+                <span><i class="fas fa-id-card"></i> Qatar Driving License</span>\
+            </div>\
+        </header>\
+\
+        <!-- Technical Skills Section -->\
+        <section id="skills">\
+            <h2 class="section-title"><i class="fas fa-tools"></i> Technical Skills</h2>\
+            <div class="skills-grid">\
+                <div class="skill-card">Networking & Switching</div>\
+                <div class="skill-card">LAN Implementation</div>\
+                <div class="skill-card">Windows Server 2012</div>\
+                <div class="skill-card">Active Directory (AD)</div>\
+                <div class="skill-card">DNS & DHCP</div>\
+                <div class="skill-card">CCTV Configuration</div>\
+                <div class="skill-card">NVR & Storage Servers</div>\
+                <div class="skill-card">Access Control Systems</div>\
+                <div class="skill-card">Time Attendance Systems</div>\
+                <div class="skill-card">Access Point Configuration</div>\
+                <div class="skill-card">EAS Systems</div>\
+                <div class="skill-card">People Counting Devices</div>\
+                <div class="skill-card">Computer Hardware</div>\
+                <div class="skill-card">MS Outlook & MS Office</div>\
+                <div class="skill-card">Troubleshooting & Support</div>\
+                <div class="skill-card">Problem Analysis</div>\
+            </div>\
+        </section>\
+\
+        <!-- Work Experience Section -->\
+        <section id="experience">\
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>\
+            <div class="timeline">\
+                \
+                <!-- Role 1 -->\
+                <div class="job-card">\
+                    <div class="job-header">\
+                        <div>\
+                            <div class="job-title">Technical Support Engineer</div>\
+                            <div class="company-name">Grapple Technologies</div>\
+                        </div>\
+                        <span class="job-date">August 2020 \'96 Present</span>\
+                    </div>\
+                    <ul class="job-details">\
+                        <li>Installed, upgraded, supported, and troubleshot Windows Operating Systems and software packages (MS Office).</li>\
+                        <li>Configured Network Video Recorders (NVR), storage servers for CCTV IP camera systems, and provided setup for CCTV devices.</li>\
+                        <li>Installed and configured Access Control Systems and Time Attendance Systems (primarily ZKT and Middle East software).</li>\
+                        <li>Configured and managed Wireless Access Points, EAS Systems, and People Counting devices.</li>\
+                        <li>Implemented, configured, and troubleshot LAN networks and network devices.</li>\
+                        <li>Provided desk-side support for desktops/laptops and assisted clients with hardware/software technical queries.</li>\
+                    </ul>\
+                </div>\
+\
+                <!-- Role 2 -->\
+                <div class="job-card">\
+                    <div class="job-header">\
+                        <div>\
+                            <div class="job-title">Technical Assistant</div>\
+                            <div class="company-name">Premier Infotech</div>\
+                        </div>\
+                        <span class="job-date">June 2019 \'96 July 2020</span>\
+                    </div>\
+                    <ul class="job-details">\
+                        <li>Installed and administered Windows Server 2012.</li>\
+                        <li>Configured Wireless Access Points and installed antivirus software across endpoints.</li>\
+                        <li>Managed MS Outlook configurations and data backups.</li>\
+                        <li>Performed cable testing, commissioning, and Fluke testing.</li>\
+                        <li>Assisted clients with hardware and software technical support.</li>\
+                    </ul>\
+                </div>\
+\
+                <!-- Role 3 -->\
+                <div class="job-card">\
+                    <div class="job-header">\
+                        <div>\
+                            <div class="job-title">IT Technician</div>\
+                            <div class="company-name">Emerio Trading and Contracting</div>\
+                        </div>\
+                        <span class="job-date">May 2018 \'96 May 2019</span>\
+                    </div>\
+                    <ul class="job-details">\
+                        <li>Installed operating systems, drivers, printers, and software suites.</li>\
+                        <li>Set up workstations with necessary peripherals and checked hardware to ensure system functionality.</li>\
+                        <li>Installed CCTV cameras and performed printer troubleshooting.</li>\
+                        <li>Prepared monthly inventory reports for IT hardware.</li>\
+                    </ul>\
+                </div>\
+\
+                <!-- Role 4 -->\
+                <div class="job-card">\
+                    <div class="job-header">\
+                        <div>\
+                            <div class="job-title">Technical Support Engineer</div>\
+                            <div class="company-name">CMS IT Services India</div>\
+                        </div>\
+                        <span class="job-date">March 2017 \'96 April 2018</span>\
+                    </div>\
+                    <ul class="job-details">\
+                        <li>Configured, maintained, and troubleshot hardware and LAN networks in the banking sector (Key clients: State Bank of India, Municipalities, CCTNS).</li>\
+                        <li>Administered user accounts using Active Directory (AD) and configured domain settings on client PCs.</li>\
+                        <li>Installed and administered Windows Server 2012 and client Windows OS.</li>\
+                        <li>Configured IP addresses for desktop computers and network printers.</li>\
+                        <li>Provided remote desktop support to end-users using RDP.</li>\
+                    </ul>\
+                </div>\
+\
+            </div>\
+        </section>\
+\
+        <!-- Education & Certifications Section -->\
+        <section id="education">\
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education & Certifications</h2>\
+            <div class="edu-grid">\
+                <div class="edu-card">\
+                    <div class="edu-title">Certifications (CCNA, MCSA)</div>\
+                    <div class="edu-sub">Completed in 2016</div>\
+                </div>\
+                <div class="edu-card">\
+                    <div class="edu-title">Engineering Diploma in Computer Hardware Maintenance</div>\
+                    <div class="edu-sub">Model Polytechnic College | Board of Technical Education (2013\'962016)</div>\
+                </div>\
+                <div class="edu-card">\
+                    <div class="edu-title">Vocational Higher Secondary Education</div>\
+                    <div class="edu-sub">GVHSS Meppayur | Govt. of Kerala Board of HSE (2011\'962012)</div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <footer>\
+            <p>I hereby declare that the particulars furnished above are true and correct to the best of my knowledge.</p>\
+        </footer>\
+    </div>\
+\
+</body>\
+</html>\
+}
