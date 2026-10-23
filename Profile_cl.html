@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammed Rasil | Technical Support Engineer</title>
+<meta name="description" content="Portfolio of Muhammed Rasil, Technical Support Engineer in Qatar specialising in networking, CCTV, access control and Windows Server support.">
+<style>
+:root{--bg:#f4f7f9;--card:#fff;--text:#18242e;--muted:#58697a;--accent:#14506b;--accent2:#0f8b8d;--line:#dbe3ea}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0e151b;--card:#16212a;--text:#e8eef3;--muted:#98a9b8;--accent:#6cc0e6;--accent2:#4fd1c5;--line:#26343f}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px}
+nav strong{color:var(--accent)}
+nav ul{list-style:none;display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem}
+.hero{padding:56px 0 40px}
+.hero .wrap{display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.hero-text{flex:1 1 320px}
+.hero h1{font-size:2.4rem;line-height:1.15;color:var(--accent)}
+.role{font-size:1.2rem;color:var(--accent2);margin:6px 0 14px;font-weight:600}
+.hero p{color:var(--muted);max-width:540px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;padding:10px 20px;border-radius:8px;font-weight:600;border:1px solid var(--accent);background:var(--accent);color:var(--bg)}
+.btn.alt{background:transparent;color:var(--accent)}
+.btn:hover{text-decoration:none;opacity:.9}
+/* ===== PROFILE PHOTO SPACE =====
+   Upload the photo next to this file, named profile.jpg
+   (profile.jpeg / .png / .webp also work, any letter case). */
+.photo{position:relative;width:220px;height:220px;border-radius:50%;overflow:hidden;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));border:4px solid var(--card);box-shadow:0 6px 24px rgba(0,0,0,.15)}
+.photo .initials{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3.4rem;font-weight:700;color:#fff;letter-spacing:2px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+section{padding:36px 0}
+h2{font-size:1.5rem;color:var(--accent);margin-bottom:6px}
+h2::after{content:"";display:block;width:46px;height:3px;background:var(--accent2);margin-top:6px;border-radius:2px}
+.sub{color:var(--muted);margin:10px 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+.stat b{display:block;font-size:1.5rem;color:var(--accent)}
+.stat span{color:var(--muted);font-size:.9rem}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card h3{font-size:1.05rem;margin-bottom:10px;color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:.9rem}
+.timeline{border-left:3px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 26px 24px}
+.job::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--accent2);border:3px solid var(--bg)}
+.job h3{font-size:1.08rem}
+.job .org{color:var(--accent);font-weight:600}
+.job .date{color:var(--muted);font-size:.9rem;margin-bottom:6px}
+.job ul{padding-left:18px}
+.job li{margin:3px 0}
+.edu h3{color:var(--text);font-size:1.02rem;margin-bottom:2px}
+.edu p{color:var(--muted);font-size:.95rem}
+.contact .item{display:block;margin:6px 0;font-size:1.02rem}
+footer{text-align:center;color:var(--muted);font-size:.88rem;padding:28px 20px 40px;border-top:1px solid var(--line);margin-top:20px}
+@media (max-width:640px){
+  .hero{padding-top:36px}
+  .hero .wrap{flex-direction:column-reverse;text-align:center}
+  .hero p{margin:0 auto}
+  .btns{justify-content:center}
+  .hero h1{font-size:2rem}
+  nav ul{gap:12px;font-size:.85rem}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <strong>Muhammed Rasil</strong>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <h1>Muhammed Rasil</h1>
+      <div class="role">Technical Support Engineer</div>
+      <p>Professional with skills across IT and networking, using up-to-date technical solutions to deliver exceptional end-to-end customer support.</p>
+      <div class="btns">
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="btn alt" href="#experience">View experience</a>
+      </div>
+    </div>
+    <!-- Profile photo: add profile.jpg next to this file -->
+    <div class="photo" aria-label="Profile photo of Muhammed Rasil">
+      <div class="initials">MR</div>
+      <img id="pic" alt="Muhammed Rasil" src="profile.jpg">
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="sub">To be a professional with excellent skills and knowledge in manipulating all areas of IT and networking, leveraging updated technical solutions to provide exceptional end-to-end customer support.</p>
+    <div class="stats">
+      <div class="stat"><b>9+</b><span>Years in IT support</span></div>
+      <div class="stat"><b>4</b><span>Companies</span></div>
+      <div class="stat"><b>Qatar</b><span>Driving licence</span></div>
+      <div class="stat"><b style="font-size:1.15rem;line-height:1.5">Engineering Diploma</b><span>Computer Hardware</span></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <p class="sub">&nbsp;</p>
+    <div class="grid3">
+      <div class="card">
+        <h3>Networking</h3>
+        <div class="chips">
+          <span class="chip">Networking &amp; Switching</span><span class="chip">LAN Implementation</span>
+          <span class="chip">DNS &amp; DHCP</span><span class="chip">Access Point Configuration</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Security &amp; Surveillance Systems</h3>
+        <div class="chips">
+          <span class="chip">CCTV Configuration</span><span class="chip">NVR &amp; Storage Servers</span>
+          <span class="chip">Access Control Systems</span><span class="chip">Time Attendance Systems</span>
+          <span class="chip">EAS Systems</span><span class="chip">People Counting Devices</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Systems &amp; Support</h3>
+        <div class="chips">
+          <span class="chip">Computer Hardware</span><span class="chip">MS Outlook &amp; MS Office</span>
+          <span class="chip">Troubleshooting &amp; Support</span><span class="chip">Problem Analysis</span>
+          <span class="chip">Windows Server 2012</span><span class="chip">Active Directory (AD)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <p class="sub">Network, CCTV and systems support roles.</p>
+    <div class="timeline">
+
+      <div class="job">
+        <h3>Technical Support Engineer</h3>
+        <div class="org">Grapple Technologies</div>
+        <div class="date">August 2020 – Present</div>
+        <ul>
+          <li>Installed, upgraded, supported, and troubleshot Windows Operating Systems and software packages (MS Office).</li>
+          <li>Configured Network Video Recorders (NVR), storage servers for CCTV IP camera systems, and provided setup for CCTV devices.</li>
+          <li>Installed and configured Access Control Systems and Time Attendance Systems (primarily ZKT and Middle East software).</li>
+          <li>Configured and managed Wireless Access Points, EAS Systems, and People Counting devices.</li>
+          <li>Implemented, configured, and troubleshot LAN networks and network devices.</li>
+          <li>Provided desk-side support for desktops/laptops and assisted clients with hardware/software technical queries.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Technical Assistant</h3>
+        <div class="org">Premier Infotech</div>
+        <div class="date">June 2019 – July 2020</div>
+        <ul>
+          <li>Installed and administered Windows Server 2012.</li>
+          <li>Configured Wireless Access Points and installed antivirus software across endpoints.</li>
+          <li>Managed MS Outlook configurations and data backups.</li>
+          <li>Performed cable testing, commissioning, and Fluke testing.</li>
+          <li>Assisted clients with hardware and software technical support.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>IT Technician</h3>
+        <div class="org">Emerio Trading and Contracting</div>
+        <div class="date">May 2018 – May 2019</div>
+        <ul>
+          <li>Installed operating systems, drivers, printers, and software suites.</li>
+          <li>Set up workstations with necessary peripherals and checked hardware to ensure system functionality.</li>
+          <li>Installed CCTV cameras and performed printer troubleshooting.</li>
+          <li>Prepared monthly inventory reports for IT hardware.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Technical Support Engineer</h3>
+        <div class="org">CMS IT Services India</div>
+        <div class="date">March 2017 – April 2018</div>
+        <ul>
+          <li>Configured, maintained, and troubleshot hardware and LAN networks in the banking sector (key clients: State Bank of India, Municipalities, CCTNS).</li>
+          <li>Administered user accounts using Active Directory (AD) and configured domain settings on client PCs.</li>
+          <li>Installed and administered Windows Server 2012 and client Windows OS.</li>
+          <li>Configured IP addresses for desktop computers and network printers.</li>
+          <li>Provided remote desktop support to end-users using RDP.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education &amp; Certification Courses</h2>
+    <p class="sub">&nbsp;</p>
+    <div class="grid3">
+      <div class="card edu"><h3>Certification Courses Practiced (CCNA, MCSA)</h3><p>Practiced in 2016</p></div>
+      <div class="card edu"><h3>Engineering Diploma in Computer Hardware Maintenance</h3><p>Model Polytechnic College | Board of Technical Education | 2013 – 2016</p></div>
+      <div class="card edu"><h3>Vocational Higher Secondary Education</h3><p>GVHSS Meppayur | Govt. of Kerala Board of HSE | 2011 – 2012</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="sub">Get in touch for technical support and IT infrastructure work.</p>
+    <div class="card">
+      <a class="item" href="mailto:Rasilck555@gmail.com">✉ Rasilck555@gmail.com</a>
+      <a class="item" href="tel:+97430808602">☎ +974 30808602</a>
+      <a class="item" href="https://www.linkedin.com/in/muhammed-rasil-c-k" target="_blank" rel="noopener">in linkedin.com/in/muhammed-rasil-c-k</a>
+      <span class="item">🚗 Qatar Driving License</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>© <span id="yr"></span> Muhammed Rasil. All rights reserved.</footer>
+
+<script>
+// Loads profile.jpg (also tries .jpeg, .png, .webp in any case); keeps the "MR" placeholder if none is found.
+(function(){
+  var img = document.getElementById('pic');
+  var exts = ['jpg','JPG','jpeg','JPEG','png','PNG','webp','WEBP'];
+  var i = 0;
+  img.onerror = function(){
+    i++;
+    if (i < exts.length) { img.src = 'profile.' + exts[i]; }
+    else { img.style.display = 'none'; }
+  };
+  img.src = 'profile.' + exts[0];
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
